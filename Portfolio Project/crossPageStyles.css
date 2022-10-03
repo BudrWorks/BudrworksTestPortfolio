@@ -1,0 +1,166 @@
+
+      /* Document properties */
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+}
+
+      /* Text properties */
+.robotoBold {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+      /* Shadow properties */
+.orangeShadow {
+  box-shadow: 0 2px 6px 0px orange;
+}
+
+      /* Link properties */
+a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+a:hover {
+  transition: all 0.3s ease 0s;
+  color: orange;
+}
+
+      /* Header properties */
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  margin: 10px 0px;
+}
+
+#topRightNav {
+  align-self: center;
+}
+
+#topRightNav a {
+  padding-right: 20px;
+}
+
+#logo {
+  height: 50px;
+  width: 50px;
+  margin-left: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#logo:hover {
+  transition: all 0.2s ease 0s;
+  box-shadow: 0 2px 15px 0px orange;
+}
+
+      /* Main section properties */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: auto;
+  overflow: auto;
+  color: #f1f1f1;
+  text-align: center;
+}
+
+      /* White Curved Border properties */
+.borderSpan {
+  height: 90px;
+  border-radius: 50px;
+}
+
+.topSpan {
+  border-bottom: 3px solid white;
+}
+
+.bottomSpan {
+  border-top: 3px solid white;
+}
+
+      /* Footer properties */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+footer a {
+  margin: 20px 30px;
+}
+
+      /* Media Queries */
+@media only screen and (max-width: 1000px) {
+  .borderSpan {
+    width: 90vw;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .borderSpan {
+    border-width: 0px;
+  }
+  #mainWelcome {
+    transition: all 0s ease 0s;
+  }
+  #welcomeMessage {
+    margin-top: -20px;
+    font-size: 6.5vw;
+  }
+  #welcomeBlurb {
+    margin-top: 10px;
+    font-size: 4.5vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .borderSpan {
+    height: 0;
+  }
+
+  #mainWelcome {
+    bottom: 0%;
+  }
+  
+  #topRightNav a {
+    padding-right: 10px;
+  }
+  #mainAboutMe p {
+    padding: 15px;
+    border: 0;
+  }
+  #mainImageSection {
+    position: relative;
+    bottom: 10%;
+  }
+  .portfolioWrapper {
+    display: initial;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .mainImage, .mainImage img {
+    width: 90vw;
+    height: 90vw;
+  }
+  footer a {
+    margin: 20px 10px;
+  }
+  #topRightNav a {
+    padding-right: 4px;
+  }
+}
